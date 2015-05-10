@@ -1,0 +1,13 @@
+{
+  "name": "tinybench",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "scripts": {
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "2.9.25"
+  }
+}
