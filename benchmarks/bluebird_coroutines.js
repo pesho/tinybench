@@ -13,5 +13,5 @@ let work = Bluebird.coroutine(function* work() {
     common.check(value);
 });
 
-common.init('Bluebird coroutines');
+common.init('Bluebird coroutines (promises + generators)');
 common.run(work);
