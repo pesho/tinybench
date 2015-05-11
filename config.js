@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-    iterations: 100000
+    iterations: 200000
 };

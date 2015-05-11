@@ -2,22 +2,19 @@
 
 let common = require('../common');
 let check = common.check;
-
-function stepInner(value) {
-    if (value < 5) {
-        step(value + 1);
-    } else {
-        check(value);
-    }
-}
+let scheduler = process.nextTick;
 
 function step(value) {
-    process.nextTick(stepInner, value);
+    if (value < 5) {
+        scheduler(step, value + 1);
+    } else {
+        scheduler(check, value);
+    }
 }
 
 function work() {
     step(0);
 }
 
-common.init('Callbacks (optimized, no closure inside loop)');
+common.init('Callbacks (optimized, no closures inside loop)');
 common.run(work);

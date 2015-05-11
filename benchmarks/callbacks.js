@@ -2,9 +2,10 @@
 
 let common = require('../common');
 let check = common.check;
+let scheduler = process.nextTick;
 
 function step(value) {
-    process.nextTick(function(val) {
+    scheduler(function(val) {
         if (val < 5) {
             step(val + 1);
         } else {
