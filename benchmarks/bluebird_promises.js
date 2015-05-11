@@ -2,6 +2,7 @@
 
 let Bluebird = require('bluebird');
 let common = require('../common');
+let check = common.check;
 
 function work() {
     return Bluebird.resolve(0)
@@ -10,7 +11,7 @@ function work() {
         .then(function(value) { return value + 1; })
         .then(function(value) { return value + 1; })
         .then(function(value) { return value + 1; })
-        .then(common.check);
+        .then(check);
 }
 
 common.init('Bluebird promises (default, closures created inside loop)');

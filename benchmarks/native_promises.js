@@ -1,6 +1,7 @@
 'use strict';
 
 let common = require('../common');
+let check = common.check;
 
 function work() {
     return Promise.resolve(0)
@@ -9,7 +10,7 @@ function work() {
         .then(function(value) { return value + 1; })
         .then(function(value) { return value + 1; })
         .then(function(value) { return value + 1; })
-        .then(common.check);
+        .then(check);
 }
 
 common.init('Native promises (default, closures created inside loop)');

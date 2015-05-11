@@ -2,6 +2,7 @@
 
 let Bluebird = require('bluebird');
 let common = require('../common');
+let check = common.check;
 
 let work = Bluebird.coroutine(function* work() {
     let value = 0;
@@ -10,7 +11,7 @@ let work = Bluebird.coroutine(function* work() {
     value = yield Bluebird.resolve(value + 1);
     value = yield Bluebird.resolve(value + 1);
     value = yield Bluebird.resolve(value + 1);
-    common.check(value);
+    check(value);
 });
 
 common.init('Bluebird coroutines (promises + generators)');
