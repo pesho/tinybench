@@ -12,6 +12,7 @@
         "curly": 0,
         "key-spacing": 0,
         "no-multi-spaces": 0,
+        "no-process-exit": 0,
         "no-shadow": 0,
         "no-underscore-dangle": 0,
         "no-unused-vars": [2, { "vars": "local", "args": "none" }],
