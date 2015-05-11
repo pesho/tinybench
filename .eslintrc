@@ -1,0 +1,22 @@
+{
+    "ecmaFeatures": {
+    },
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "globals": {
+    },
+    "rules": {
+        "camelcase": 0,
+        "curly": 0,
+        "key-spacing": 0,
+        "no-multi-spaces": 0,
+        "no-shadow": 0,
+        "no-underscore-dangle": 0,
+        "no-unused-vars": [2, { "vars": "local", "args": "none" }],
+        "quotes": 0,
+        "space-infix-ops": 0,
+        "yoda": 0
+    }
+}

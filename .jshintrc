@@ -1,0 +1,9 @@
+{
+    "esnext": true,
+    "node": true,
+    "strict": true,
+    "undef": true,
+    "unused": false
+
+    "predef": []
+}
