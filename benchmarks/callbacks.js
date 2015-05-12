@@ -18,5 +18,4 @@ function work() {
     step(0);
 }
 
-common.init('Callbacks (default, closure created inside loop)');
-common.run(work);
+common.run('Callbacks (default, closures created inside loop)', work);

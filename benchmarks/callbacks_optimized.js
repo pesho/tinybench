@@ -16,5 +16,4 @@ function work() {
     step(0);
 }
 
-common.init('Callbacks (optimized, no closures inside loop)');
-common.run(work);
+common.run('Callbacks (optimized, no closures inside loop)', work);

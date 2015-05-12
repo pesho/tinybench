@@ -14,5 +14,4 @@ function work() {
         .then(check);
 }
 
-common.init('Bluebird promises (default, closures created inside loop)');
-common.run(work);
+common.run('Bluebird promises (default, closures created inside loop)', work);

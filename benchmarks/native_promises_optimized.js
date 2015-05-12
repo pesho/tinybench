@@ -14,5 +14,4 @@ function work() {
         .then(check);
 }
 
-common.init('Native promises (optimized, no closures inside loop)');
-common.run(work);
+common.run('Native promises (optimized, no closures inside loop)', work);

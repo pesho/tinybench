@@ -15,5 +15,4 @@ function work() {
         .then(check);
 }
 
-common.init('Bluebird promises (optimized, no closures inside loop)');
-common.run(work);
+common.run('Bluebird promises (optimized, no closures inside loop)', work);

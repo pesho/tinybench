@@ -13,5 +13,4 @@ function work() {
         .then(check);
 }
 
-common.init('Native promises (default, closures created inside loop)');
-common.run(work);
+common.run('Native promises (default, closures created inside loop)', work);
